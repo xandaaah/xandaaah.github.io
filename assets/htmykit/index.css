@@ -1,0 +1,27 @@
+
+pre.xcode-pre {
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    border: 1px solid #BCBEC0;
+    background: #F1F3F5;
+    font:15px Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace
+}
+
+code.xcode-code {
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border: 1px solid #BCBEC0;
+    padding: 2px;
+    font:15px Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace
+}
+
+pre.xcode-pre code.xcode-code {
+    border-radius: 0px; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border: 0px;
+    padding: 2px;
+    font:15px Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace
+}

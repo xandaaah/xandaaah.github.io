@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <x-include src="/assets/htmykit/head.html"></x-include>
+    <x-style src="/assets/htmykit/index.css"></x-style>
+    <x-google-font family="Ubuntu"></x-google-font>
+    <style>
+        body {
+            font-family: 'Ubuntu';
+            font-size: 18px;
+        }
+        inline {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Start HTMY/HTBLOG-->
+    <script src="/assets/htmy.js"></script>
+    <x-include src="/assets/htmykit/htmykit.html"></x-include>
+    <x-include src="/assets/htmyblog/htmyblog.html"></x-include>
+    <!--End HTMY/HTBLOG-->
+
+    <x-blog-meta titl="Illegal Keys" subtitle="No public keys allowed."></x-blog-meta>
+    <inline>HD-DVD AACS key:</inline>
+    <inline>
+        <x-code>09 F9 11 02 9D 74 E3 5B D8 41 56 C5 63 56 88 C0</x-code>
+    </inline>
+    <br>
+    <inline>HDCP Master key:</inline>
+    <inline>
+        <a href="/hdcpkey.tar">Right here</a>
+    </inline>
+</body>
+
