@@ -5,14 +5,23 @@ class CustomElement extends HTMLElement {
         
         class ActualCustomElement extends HTMLElement {
             connectedCallback() {
+                console.trace()
+                window.console.log(name, this.innerHTML, 1)
+                if (this.initalized) {
+                    return
+                }
                 let innerHTML = template.replaceAll('{innerhtml}', this.innerHTML).replaceAll('{name}', name)
                 for (const attrib of this.attributes) {
                     innerHTML = innerHTML.replaceAll(`(${attrib.name})`, attrib.value)
-                    window.console.log(attrib.name, innerHTML)
+                    window.console.log(name, attrib.name, innerHTML)
+                    
                 }
+                window.console.log(name, innerHTML, 2)
                 this.innerHTML = innerHTML
             }
         }
+
+        
         
         this.innerHTML = ""
 

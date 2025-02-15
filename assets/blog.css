@@ -25,3 +25,10 @@ pre.xcode-pre code.xcode-code {
     padding: 2px;
     font:15px Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace
 }
+body {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+}
+inline {
+    display: inline-block;
+}

@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <x-include src="/assets/htmykit/head.html"></x-include>
-    <x-style src="/assets/htmykit/index.css"></x-style>
+    <x-include src="/assets/common_head.html"></x-include>
+    <x-style src="/assets/blog.css"></x-style>
     <x-google-font family="Ubuntu"></x-google-font>
-    <style>
-        body {
-            font-family: 'Ubuntu';
-            font-size: 18px;
-        }
-        inline {
-            display: inline-block;
-        }
-    </style>
 </head>
-
 <body>
     <!--Start HTMY/HTBLOG-->
     <script src="/assets/htmy.js"></script>
-    <x-include src="/assets/htmykit/htmykit.html"></x-include>
-    <x-include src="/assets/htmyblog/htmyblog.html"></x-include>
+    <x-include src="/assets/common.html"></x-include>
     <!--End HTMY/HTBLOG-->
 
     <x-blog-meta title="Illegal Keys" subtitle="No public keys allowed."></x-blog-meta>
@@ -29,7 +18,7 @@
     <br>
     <inline>HDCP Master key:</inline>
     <inline>
-        <a href="/hdcpkey.tar">Right here</a>
+        <a href="/dl/hdcpkey.tar">Right here</a>
     </inline>
 </body>
 
